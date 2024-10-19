@@ -1,4 +1,4 @@
-package com.github.fiecher.triangle_rasterisation.trianglerasterisation;
+package com.github.fiecher.triangle_rasterisation;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

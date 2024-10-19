@@ -1,4 +1,4 @@
-package com.github.fiecher.triangle_rasterisation.trianglerasterisation;
+package com.github.fiecher.triangle_rasterisation;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
