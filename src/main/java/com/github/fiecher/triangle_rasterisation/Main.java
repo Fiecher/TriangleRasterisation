@@ -1,14 +1,14 @@
 package com.github.fiecher.triangle_rasterisation;
 
-import com.github.fiecher.triangle_rasterisation.colors.SingleColor;
-import com.github.fiecher.triangle_rasterisation.rasterisers.BasedTriangleRasterisator;
+import com.github.fiecher.triangle_rasterisation.color.GradientColorer;
+import com.github.fiecher.triangle_rasterisation.color.MonotoneColorer;
+import com.github.fiecher.triangle_rasterisation.rasterisers.TriangleRasterisator;
 import javafx.application.Application;
 import javafx.geometry.Point2D;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -24,17 +24,15 @@ public class Main extends Application {
         Group root = new Group();
         Canvas canvas = new Canvas(1000,1000);
         GraphicsContext gc = canvas.getGraphicsContext2D();
-        BasedTriangleRasterisator tr = new BasedTriangleRasterisator();
 
-        SingleColor color = new SingleColor(Color.BLACK);
-        tr.setColor(color);
-        tr.setCtx(gc);
-        tr.draw(new Point2D(1000,50), new Point2D(300,200), new Point2D(300,300));
+        TriangleRasterisator tr1 = new TriangleRasterisator(gc.getPixelWriter(), new MonotoneColorer(Color.BLACK));
+        TriangleRasterisator tr2 = new TriangleRasterisator(gc.getPixelWriter(), new GradientColorer(Color.RED, Color.GREEN, Color.BLUE));
+
+        tr1.draw(new Point2D(200,200), new Point2D(300,300), new Point2D(450,230));
+        tr2.draw(new Point2D(0,0), new Point2D(100,100), new Point2D(150,30));
 
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-
-
     }
 }

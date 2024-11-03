@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="188d63c9-8b9f-4e30-9efc-c0039392ef2e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/ColorRGB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/TriangleRasterisator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/BasedTriangleRasterisator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/BaseRasteriser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/TriangleColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/TriangleRasteriser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Colorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Colorer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/GradientColorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/GradientColorer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/MonotoneColorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/MonotoneColorer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/colors/SingleColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/BasedTriangleRasterisator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/TriangleRasterisator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +96,11 @@
       <updated>1729325115798</updated>
       <workItem from="1729359926851" duration="160000" />
       <workItem from="1729360357592" duration="2671000" />
-      <workItem from="1729758212155" duration="2159000" />
+      <workItem from="1729758212155" duration="3087000" />
+      <workItem from="1730213435347" duration="3926000" />
+      <workItem from="1730276451016" duration="594000" />
+      <workItem from="1730550071427" duration="2205000" />
+      <workItem from="1730636341611" duration="5281000" />
     </task>
     <servers />
   </component>
@@ -103,35 +117,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/BasedTriangleRasterisator.java</url>
-          <line>137</line>
-          <properties class="com.github.fiecher.triangle_rasterisation.rasterisers.BasedTriangleRasterisator.Triangle" method="drawFlatMax">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Main.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/BasedTriangleRasterisator.java</url>
-          <line>159</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/BasedTriangleRasterisator.java</url>
-          <line>133</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
