@@ -1,10 +1,10 @@
 package com.github.fiecher.triangle_rasterisation.math;
 
-public class Instruments {
+public class Utils {
     public static final float EPSILON = 0.000001f;
 
-    public static boolean equals(final double v1, final double v2) {
-        return Math.abs(v1 - v2) < EPSILON;
+    public static boolean equals(final double a, final double b) {
+        return Math.abs(a - b) < EPSILON;
     }
 
     public static boolean moreThan(final double left, final double right) {

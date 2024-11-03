@@ -1,100 +1,87 @@
 package com.github.fiecher.triangle_rasterisation.math;
 
+import com.github.fiecher.triangle_rasterisation.color.Texture;
 import javafx.geometry.Point2D;
 
 import java.util.Objects;
 
 public class Triangle {
 
-    private final Point2D v1;
-    private final Point2D v2;
-    private final Point2D v3;
+    private Point2D point1;
+    private Point2D point2;
+    private Point2D point3;
 
-    public Triangle(final Point2D v1, final Point2D v2, final Point2D v3) {
+    private Texture texture;
 
-        Objects.requireNonNull(v1);
-        Objects.requireNonNull(v2);
-        Objects.requireNonNull(v3);
+    public Triangle(Point2D point1, Point2D point2, Point2D point3, Texture texture) {
 
-        this.v1 = v1;
-        this.v2 = v2;
-        this.v3 = v3;
+        Objects.requireNonNull(point1);
+        Objects.requireNonNull(point2);
+        Objects.requireNonNull(point3);
+        Objects.requireNonNull(texture);
+
+        this.point1 = point1;
+        this.point2 = point2;
+        this.point3 = point3;
+        this.texture = texture;
     }
 
-
-    public Point2D v1() {
-        return v1;
+    public Texture getTexture() {
+        return texture;
     }
 
-
-    public double x1() {
-        return v1.getX();
+    public void setTexture(Texture texture) {
+        this.texture = texture;
     }
 
-
-    public double y1() {
-        return v1.getY();
+    public Point2D getPoint1() {
+        return point1;
     }
 
-
-    public Point2D v2() {
-        return v2;
+    public Point2D getPoint2() {
+        return point2;
     }
 
-
-    public double x2() {
-        return v2.getX();
-    }
-
-
-    public double y2() {
-        return v2.getY();
-    }
-
-
-    public Point2D v3() {
-        return v3;
+    public Point2D getPoint3() {
+        return point3;
     }
 
 
     public double x3() {
-        return v3.getX();
+        return point3.getX();
     }
 
 
     public double y3() {
-        return v3.getY();
+        return point3.getY();
     }
 
 
-    public Barycentrics barycentrics(final javafx.geometry.Point2D p) {
+    public Barycentric barycentrics(final Point2D p) {
 
         final double x = p.getX();
         final double y = p.getY();
 
-        final double x1 = x1();
-        final double y1 = y1();
+        final double x1 = getPoint1().getX();
+        final double y1 = getPoint1().getY();
 
-        final double x2 = x2();
-        final double y2 = y2();
+        final double x2 = getPoint2().getX();
+        final double y2 = getPoint2().getY();
 
-        final double x3 = x3();
-        final double y3 = y3();
+        final double x3 = getPoint3().getX();
+        final double y3 = getPoint3().getY();
 
-        // n stands for numerator
         final double n1 = (y2 - y3) * (x - x3) + (x3 - x2) * (y - y3);
         final double n2 = (y3 - y1) * (x - x3) + (x1 - x3) * (y - y3);
         final double n3 = (y1 - y2) * (x - x1) + (x2 - x1) * (y - y1);
 
-        // d = 1 / denominator
         final double d = 1 / ((y2 - y3) * (x1 - x3) + (x3 - x2) * (y1 - y3));
 
-        // lambdas
         final double l1 = n1 * d;
         final double l2 = n2 * d;
         final double l3 = n3 * d;
 
-        return new Barycentrics(l1, l2, l3);
+        return new Barycentric(l1, l2, l3);
     }
-    
+
 }

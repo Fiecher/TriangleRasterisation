@@ -5,18 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="188d63c9-8b9f-4e30-9efc-c0039392ef2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/ColorRGB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/math/Barycentric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/BaseRasteriser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/TriangleColor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/TriangleRasteriser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Colorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Colorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/GradientColorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/GradientColorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/MonotoneColorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/MonotoneColorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Texture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/colors/SingleColor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/BasedTriangleRasterisator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/TriangleRasterisator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/ColorRGB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/ColorRGB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Colorer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/GradientColorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/GradientTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/MonotoneColorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/MonotoneTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/color/Texture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/math/Barycentrics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/math/Instruments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/math/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/math/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/math/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/TriangleRasterisator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/fiecher/triangle_rasterisation/rasterisers/TriangleRasterisator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,10 +77,13 @@
       <recent name="C:\Users\user\OneDrive\Programming\Java\Computer Graphics\TriangleRasterisation\lib" />
       <recent name="C:\Users\Stepan\OneDrive\Programming\Java\Computer Graphics\TriangleRasterisation\lib" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.github.fiecher.triangle_rasterisation" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.github.fiecher.triangle_rasterisation.Main" />
+    <configuration name="Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.github.fiecher.triangle_rasterisation.Test" />
       <module name="TriangleRasterisation" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -100,7 +104,7 @@
       <workItem from="1730213435347" duration="3926000" />
       <workItem from="1730276451016" duration="594000" />
       <workItem from="1730550071427" duration="2205000" />
-      <workItem from="1730636341611" duration="5281000" />
+      <workItem from="1730636341611" duration="10639000" />
     </task>
     <servers />
   </component>
